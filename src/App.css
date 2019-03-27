@@ -1,0 +1,21 @@
+.wrapper{
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+.input-box {
+  width: 14rem;
+  height: 1.8rem;
+  outline: 0;
+  border-radius: 4px;
+  background: transparent;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+h4{
+  text-align: center;
+  text-transform: capitalize;
+}
