@@ -24,8 +24,8 @@ export default class Main extends React.Component {
 		return (
 			<React.Fragment>
 				<div className="wrapper">
-					<input type="text" placeholder="Enter Pokemon name" className="input-box" onChange={this.handleChange}/>
-					<Display pokes= {this.state.pokes} />
+					<input type="text" placeholder="Enter Pokemon name" className="input-box" onKeyPress={this.handleChange}/>
+					<Display pokes={this.state.pokes} />
 				</div>
 			</React.Fragment>
 		)
