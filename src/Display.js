@@ -27,9 +27,9 @@ function Poke(props) {
 	console.log(getURL(props.pokeInfo.url))
 	return (
 		<React.Fragment>
-			<div style={{border: '1px solid green', margin: '2rem', background: 'gray'}}>
-				<h4>{props.pokeInfo.name}</h4>
+			<div style={{border: '1px solid green', margin: '2rem', background: '#EEEEEE'}}>
 				<img src= {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getURL(props.pokeInfo.url)}.png`} />
+				<h4 style={{background: '#777777'}}>{props.pokeInfo.name}</h4>
 			</div>
 		</React.Fragment>
 	)

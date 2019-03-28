@@ -1,21 +1,32 @@
+body{
+  background: #CCCCCC;
+}
 .wrapper{
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 20px auto;
   text-align: center;
 }
 .input-box {
-  width: 14rem;
+  width: 16rem;
   height: 1.8rem;
   outline: 0;
-  border-radius: 4px;
-  background: transparent;
+  border-radius: 6px;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 1rem;
+
 }
 .container{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   place-items: center;
+  /*background: #EEEEEE;*/
 }
 h4{
   text-align: center;
   text-transform: capitalize;
+  margin: 0;
+  color: #F3F3F3;
+  padding: 2px 4px;
+  font-size: 0.9rem;
 }
