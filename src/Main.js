@@ -14,7 +14,7 @@ export default class Main extends React.Component {
 	}
 
 	componentDidMount = () => {
-		fetch('https://pokeapi.co/api/v2/pokemon/?limit=200')
+		fetch('https://pokeapi.co/api/v2/pokemon/?limit=500')
 			.then(res => res.json())
 			.then(({results}) => this.setState({pokes: results})) 			
 	}

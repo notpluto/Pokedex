@@ -30,3 +30,7 @@ h4{
   padding: 2px 4px;
   font-size: 0.9rem;
 }
+div > img {
+  width: 100px;
+  height: 100px;
+}
