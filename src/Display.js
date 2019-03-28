@@ -1,15 +1,14 @@
 import React from 'react';
-import Main from './Main';
 
 export default class Display extends React.Component {
 
 	render() {
 		const {pokes} = this.props;
-		console.log(pokes)
+		// console.log(pokes)
 		return (
 			<div className="container">
 			{
-				pokes.map((poke, index) =>  <Poke pokeInfo={poke} />)
+				pokes.map((poke, index) =>  <Poke pokeInfo={poke} key={index}/>)
 			}
 			</div>
 		)
@@ -24,11 +23,11 @@ function getURL(string)  {
 function Poke(props) {
 	// const {name} = props.pokeInfo;
 	// console.log(props.pokeInfo.url)
-	console.log(getURL(props.pokeInfo.url))
+	// console.log(getURL(props.pokeInfo.url))
 	return (
 		<React.Fragment>
 			<div style={{border: '1px solid green', margin: '2rem', background: '#EEEEEE'}}>
-				<img src= {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getURL(props.pokeInfo.url)}.png`} />
+				<img src= {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${getURL(props.pokeInfo.url)}.png`} alt="pokemon-name" />
 				<h4 style={{background: '#777777'}}>{props.pokeInfo.name}</h4>
 			</div>
 		</React.Fragment>
