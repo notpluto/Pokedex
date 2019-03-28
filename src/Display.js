@@ -8,7 +8,7 @@ export default class Display extends React.Component {
 		return (
 			<div className="container">
 			{
-				pokes.map((poke, index) =>  <Poke pokeInfo={poke} key={index}/>)
+				pokes.filter(val => val.name.toLowerCase().startsWith(this.props.search.toLowerCase())).map((poke, index) =>  <Poke pokeInfo={poke} key={index}/>)
 			}
 			</div>
 		)
